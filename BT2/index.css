@@ -1,0 +1,70 @@
+body {
+   display: flex;
+   justify-content: center;
+   background-color: #F8F9FA;
+   height: 100vh;
+   align-items: center;
+}
+.box {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 320px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    background-color:#fff ;
+}
+.element {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.var {
+    width: 90px;
+}
+.element input {
+    flex: 1;
+    height: 30px;
+    font-size: 18px;
+    outline: none;
+}
+.operation_list {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.operation {
+    width: 70px; /* Độ rộng của viền */
+    padding: 8px;
+    text-align: center;
+    background: #9999FF;
+    /* linear-gradient(105deg, rgb(255, 46, 144), rgb(61, 35, 185)) */
+    border-radius: 8px; /* nếu muốn bo góc */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.operation:hover,.operation.active  {
+    background: linear-gradient(105deg, rgb(220, 126, 170), rgb(134, 121, 205));
+}
+.calculate {
+    padding: 12px; /* Độ rộng của viền */
+    background: linear-gradient(105deg, rgb(255, 46, 144), rgb(61, 35, 185));
+    border-radius: 8px; /* nếu muốn bo góc */
+    text-align: center;
+    color: #F8F9FA;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.result {
+    border: 1px #000 solid;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
